@@ -1,0 +1,40 @@
+[submodule "NetPractice"]
+	path = NetPractice
+	url = https://github.com/jgo-42/NetPractice
+	branch = main
+[submodule "cpp_modules"]
+	path = cpp_modules
+	url = https://github.com/jgo-42/cpp_modules
+	branch = main
+[submodule "fdf"]
+	path = fdf
+	url = https://github.com/jgo-42/fdf
+	branch = main
+[submodule "ft_printf"]
+	path = ft_printf
+	url = https://github.com/jgo-42/ft_printf
+	branch = main
+[submodule "get_next_line"]
+	path = get_next_line
+	url = https://github.com/jgo-42/get_next_line
+	branch = main
+[submodule "libft"]
+	path = libft
+	url = https://github.com/jgo-42/libft
+	branch = main
+[submodule "minishell"]
+	path = minishell
+	url = https://github.com/jgo-42/minishell
+	branch = main
+[submodule "philo"]
+	path = philo
+	url = https://github.com/jgo-42/philo
+	branch = main
+[submodule "pipex"]
+	path = pipex
+	url = https://github.com/jgo-42/pipex
+	branch = main
+[submodule "push_swap"]
+	path = push_swap
+	url = https://github.com/jgo-42/push_swap
+	branch = main
