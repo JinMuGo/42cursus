@@ -1,49 +1,44 @@
 name: Auto-update submodules
 
 on:
-  push:
-    branches:
-      main
-  schedule:
-    - cron: '0 3 * * *' # 한국 기준 오후 12시
+    push:
+        branches: main
+    schedule:
+        - cron: "0 3 * * *" # 한국 기준 오후 12시
 
 jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          submodules: 'recursive'
-          fetch-depth: 0
-      - name: Update submodules
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          SUBMODULE_PATHS: ${{ secrets.SUBMODULE_PATHS }}
-        run: |
-          git submodule sync
-          git submodule update --init --recursive
-          git submodule foreach --recursive 'git fetch && git merge --ff-only origin/main'
-          for path in $(echo $SUBMODULE_PATHS | sed "s/,/ /g"); do
-            cd $path
-            git checkout -qf $SHA1
-            cd -
-          done
-      - name: Check changes
-        run: |
-          if [[ -n $(git diff --submodule) ]]; then
-            echo 'Changes detected, proceeding with commit and push...'
-          else
-            echo 'No changes to submodules, exiting...'
-            exit 0
-          fi
-      - name: Commit changes
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          git config user.name 'jgo-42'
-          git config user.email 'jingmuio@gmail.com'
-          git commit -am "Chore: update submodules"
-          git push
-
-
+    update:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+              with:
+                  submodules: "recursive"
+                  fetch-depth: 0
+            - name: Update submodules
+              env:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                  SUBMODULE_PATHS: ${{ secrets.SUBMODULE_PATHS }}
+              run: |
+                  git submodule sync
+                  git submodule update --init --recursive
+                  git submodule foreach --recursive 'git fetch && git merge --ff-only origin/main'
+                  for path in $(echo $SUBMODULE_PATHS | sed "s/,/ /g"); do
+                    cd $path
+                    git checkout -qf $SHA1
+                    cd -
+                  done
+            - name: Commit changes
+              env:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+              run: |
+                  if [[ -n $(git diff --submodule) ]]; then
+                    echo 'Changes detected, proceeding with commit and push...'
+                    git config user.name 'jgo-42'
+                    git config user.email 'jingmuio@gmail.com'
+                    git commit -am "Chore: update submodules"
+                    git push
+                  else
+                    echo 'No changes to submodules, exiting...'
+                    exit 0
+                  fi
