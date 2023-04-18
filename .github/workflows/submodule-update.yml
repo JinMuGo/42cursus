@@ -31,7 +31,7 @@ jobs:
           done
       - name: Check changes
         run: |
-          if [[ -n $(git status --porcelain) ]]; then
+          if [[ -n $(git diff --submodule) ]]; then
             echo 'Changes detected, proceeding with commit and push...'
           else
             echo 'No changes to submodules, exiting...'
