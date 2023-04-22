@@ -38,3 +38,7 @@
 	path = push_swap
 	url = https://github.com/jgo-42/push_swap
 	branch = main
+[submodule "miniRT"]
+	path = miniRT
+	url = https://github.com/jgo-42/miniRT
+	branch = main
