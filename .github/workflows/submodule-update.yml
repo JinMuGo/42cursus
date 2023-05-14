@@ -24,7 +24,7 @@ jobs:
                   git submodule update --remote
                   git config --global user.name 'jgo-42'
                   git config --global user.email 'jingmuio@gmail.com'
-                  git submodule foreach --recursive 'git fetch && if ! git merge --ff-only origin/main; then git merge -Xtheirs origin/main; fi'
+                  git submodule foreach 'git fetch && if ! git merge --ff-only origin/main; then git merge -Xtheirs origin/main; fi'
                   for path in $(echo $SUBMODULE_PATHS | sed "s/,/ /g"); do
                     cd $path
                     git checkout -qf $SHA1
