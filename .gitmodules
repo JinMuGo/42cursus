@@ -42,3 +42,7 @@
 	path = miniRT
 	url = https://github.com/jgo-42/miniRT
 	branch = main
+[submodule "make_config"]
+	path = make_config
+	url = https://github.com/jgodv/make_config
+	branch = color
