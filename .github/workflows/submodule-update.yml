@@ -21,7 +21,7 @@ jobs:
                   SUBMODULE_PATHS: ${{ secrets.SUBMODULE_PATHS }}
               run: |
                   git submodule sync
-                  git submodule update --init --recursive
+                  git submodule update --remote
                   git config --global user.name 'jgo-42'
                   git config --global user.email 'jingmuio@gmail.com'
                   git submodule foreach --recursive 'git fetch && if ! git merge --ff-only origin/main; then git merge -Xtheirs origin/main; fi'
