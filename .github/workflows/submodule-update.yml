@@ -20,6 +20,7 @@ jobs:
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                   SUBMODULE_PATHS: ${{ secrets.SUBMODULE_PATHS }}
               run: |
+                  git pull
                   git submodule sync
                   git submodule update --remote
                   git config --global user.name 'jgo-42'
