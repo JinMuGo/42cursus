@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 14:05:59 by jgo               #+#    #+#              #
-#    Updated: 2023/06/06 16:35:22 by jgo              ###   ########.fr        #
+#    Updated: 2023/07/17 15:12:53 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ DIRS :=	cpp_modules \
 		fdf \
 		ft_printf \
 		libft \
+		miniRT \
 		minishell \
 		philo \
 		pipex \

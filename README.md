@@ -14,5 +14,5 @@
 | 3 | [minishell](https://github.com/jgodv/minishell) | As beautiful as a shell | Completed | [![jgo's 42 minishell Score](https://badge42.vercel.app/api/v2/clgusi0jq006608mn00p7d026/project/2934718)](https://github.com/JaeSeoKim/badge42)
 | 3 | [Philosophers](https://github.com/jgodv/philo) | I never thought philosophy would be so deadly | Completed | [![jgo's 42 Philosophers Score](https://badge42.vercel.app/api/v2/clgusi0jq006608mn00p7d026/project/3017473)](https://github.com/JaeSeoKim/badge42)
 | 4 | [NetPractice](https://jgo42.notion.site/NetPractice-85658be3484944edb4d135255de6a908) | NetPractice is a general practical exercise to let you discover networking. | Completed | [![jgo's 42 NetPractice Score](https://badge42.vercel.app/api/v2/clgusi0jq006608mn00p7d026/project/3057489)](https://github.com/JaeSeoKim/badge42)
-| 4 | [CPP Modules](https://github.com/jgodv/cpp_modules/) | Object-Oriented Programming a.k.a OOP with C++ | In Progress 4 / 9 | Check Repo
+| 4 | [CPP Modules](https://github.com/jgodv/cpp_modules/) | Object-Oriented Programming a.k.a OOP with C++ | In Progress 4 / 9  | Check Repo
 | 4 | [miniRT](https://github.com/jgodv/miniRT/) | My first RayTracer with miniLibX | Completed | [![jgo's 42 miniRT Score](https://badge42.vercel.app/api/v2/clgusi0jq006608mn00p7d026/project/3101825)](https://github.com/JaeSeoKim/badge42)
