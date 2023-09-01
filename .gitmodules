@@ -46,3 +46,7 @@
 	path = make_config
 	url = https://github.com/jgodv/make_config
 	branch = color
+[submodule "inception"]
+	path = inception
+	url = https://github.com/devjgo/inception
+	branch = main
