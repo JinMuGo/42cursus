@@ -44,9 +44,13 @@
 	branch = main
 [submodule "make_config"]
 	path = make_config
-	url = https://github.com/jgodv/make_config
+	url = https://github.com/devjgo/make_config
 	branch = color
 [submodule "inception"]
 	path = inception
 	url = https://github.com/devjgo/inception
+	branch = main
+[submodule "webserv"]
+	path = webserv
+	url = https://github.com/WebWaveMaker/webserv.git
 	branch = main
