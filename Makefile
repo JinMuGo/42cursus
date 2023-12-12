@@ -10,7 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
-include ./make_config/com/ColorRules.mk
+include ./make_config/com/Color.mk
+include ./make_config/com/Flags.mk
 
 DIRS :=	cpp_modules \
 		fdf \
@@ -20,10 +21,11 @@ DIRS :=	cpp_modules \
 		minishell \
 		philo \
 		pipex \
-		push_swap
+		push_swap \
+		webserv
 
 $(DIRS):
-	$(MAKE) -C $@
+	$(MAKE) -C $@ $(J)
 
 all bonus :
 	$(Q)$(call color_printf,$(YELLOW),$(PROJECT_NAME),🎯 Start compiling each directory)
