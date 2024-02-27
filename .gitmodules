@@ -54,3 +54,7 @@
 	path = webserv
 	url = https://github.com/WebWaveMaker/webserv.git
 	branch = main
+[submodule "ft_transcendence"]
+	path = ft_transcendence
+	url = https://github.com/42ForYou/ft_transcendence
+	branch = main

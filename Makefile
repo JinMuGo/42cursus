@@ -22,13 +22,14 @@ DIRS :=	cpp_modules \
 		philo \
 		pipex \
 		push_swap \
-		webserv
+		webserv \
+		ft_transcendence
 
 $(DIRS):
 	$(MAKE) -C $@ $(J)
 
 all bonus :
-	$(Q)$(call color_printf,$(YELLOW),$(PROJECT_NAME),🎯 Start compiling each directory)
+	$(Q)$(call color_printf,$(YELLOW),$(PROJECT_NAME),🎯 Start making each directory)
 	$(MAKE) $(DIRS)
 	$(Q)$(call color_printf,$(GREEN),$(PROJECT_NAME),✨ All directory compiled!)
 
